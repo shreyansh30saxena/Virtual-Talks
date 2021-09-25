@@ -320,7 +320,7 @@ button {
         font-weight: bolder;
         padding-top: 25%;
         text-align: left;
-        margin-left: 6%;
+        margin-left: 4%;
     }
 
     #write-button {
@@ -482,9 +482,11 @@ button {
         left: 1%;
 
     }
+    #message #action{
+     color: white;
+     font-size: 10px;
 
-
-
+    }
 
     #interview {
         /* background-image: url("speaking.gif"); */
