@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" tyep="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/b4740b00f9.js"></script>
+    <script type="text/javascript" src="jscode.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="interview">
+            <img id="speaking-image" src="speaking.gif" alt="speak">
+            <h1 id="interview-heading">Shall We Start?</h1>
+            <button id="start" type="submit" onclick="interview()">Yes, Let's Start</button>
+
+            <div id="start-speaking-heading-2">
+                <h1>Press "<i class="fa fa-microphone" aria-hidden="true"></i>" and Start Speaking</h1>
+            </div>
+            <p><button type="button" id="write-button-3" onclick="runSpeechRecognition_interview()"><i
+                        class="fa fa-microphone" aria-hidden="true"></i></button></p>
+            <div id="message">
+                <p id="action"></p>
+            </div>
+            <div id="output" class="hide"></div>
+        </div>
+    </div>
+</body>
+
+</html>
