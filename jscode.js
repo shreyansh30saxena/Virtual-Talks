@@ -70,6 +70,7 @@ function runSpeechRecognition_interview() {
 		heading.style.display = "none";
 		let msg = document.getElementById("message");
 		msg.style.display = "block";
+		msg.style.fontSize = "10px";
 		action.innerHTML = "<span style='color:white; margin-left : 14%; font-size : 30px;'>Listening, please speak...</span>";
 	};
 
@@ -103,6 +104,13 @@ function speak_interview() {
 
 	const qstns = ['Hi Candidate I am Dobi, please tell me about yourself', 'That is a nice introduction,What are your skill sets', 'It was nice talking to you, we will get back with the results'];
 
+        let size = qstns.length;
+	 
+	 if(i == size ){
+
+	  alert("Interview is over, return to homepage");
+	  window.location.href="index.html";
+	}
 	let utter = new SpeechSynthesisUtterance();
 	utter.lang = 'en-US';
 	utter.text = qstns[i];
