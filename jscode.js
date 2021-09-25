@@ -112,7 +112,7 @@ function speak_interview() {
 
 		let blink = document.getElementById("write-button-3");
 		let image = document.getElementById("speaking-image");
-		image.src = "notSpeaking.png";
+		image.src = "notSpeaking.PNG";
 		image.style.width = "30%";
 		image.style.height = "200px";
 		blink.style.backgroundColor = "white";
